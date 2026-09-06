@@ -1,0 +1,92 @@
+[
+  {
+    "id": "sweetbear-white",
+    "design": "sweetbear",
+    "designName": "Sweet Bear",
+    "color": "white",
+    "colorName": "ขาว",
+    "price": 259,
+    "image": "images/sweetbear.jpg",
+    "description": "เสื้อยืดลายหมีน้อยมินิมอล สีขาว น่ารักแบบไม่หวานเกินไป ใส่ได้ทุกวัน"
+  },
+  {
+    "id": "sweetbear-pink",
+    "design": "sweetbear",
+    "designName": "Sweet Bear",
+    "color": "pink",
+    "colorName": "ชมพู",
+    "price": 259,
+    "image": "images/sweetbear.jpg",
+    "description": "เสื้อยืดลายหมีน้อยมินิมอล สีชมพู อ่อนหวานนุ่มนวล ใส่สบายทั้งวัน"
+  },
+  {
+    "id": "sweetbear-black",
+    "design": "sweetbear",
+    "designName": "Sweet Bear",
+    "color": "black",
+    "colorName": "ดำ",
+    "price": 259,
+    "image": "images/sweetbear.jpg",
+    "description": "เสื้อยืดลายหมีน้อยมินิมอล สีดำ ตัดกับลายหมีให้ดูมีสไตล์ขึ้น"
+  },
+  {
+    "id": "blossom-white",
+    "design": "blossom",
+    "designName": "Blossom",
+    "color": "white",
+    "colorName": "ขาว",
+    "price": 259,
+    "image": "images/blossom.jpg",
+    "description": "เสื้อยืดลายดอกไม้เล็กๆ สีขาว กระจายทั่วตัว ให้ความรู้สึกละมุนอ่อนหวาน"
+  },
+  {
+    "id": "blossom-pink",
+    "design": "blossom",
+    "designName": "Blossom",
+    "color": "pink",
+    "colorName": "ชมพู",
+    "price": 259,
+    "image": "images/blossom.jpg",
+    "description": "เสื้อยืดลายดอกไม้เล็กๆ สีชมพู หวานละมุนเข้ากับลายดอกไม้"
+  },
+  {
+    "id": "blossom-black",
+    "design": "blossom",
+    "designName": "Blossom",
+    "color": "black",
+    "colorName": "ดำ",
+    "price": 259,
+    "image": "images/blossom.jpg",
+    "description": "เสื้อยืดลายดอกไม้เล็กๆ สีดำ ตัดกันให้ลายดอกไม้เด่นขึ้น"
+  },
+  {
+    "id": "cutietype-white",
+    "design": "cutietype",
+    "designName": "Cutie Type",
+    "color": "white",
+    "colorName": "ขาว",
+    "price": 259,
+    "image": "images/cutietype.jpg",
+    "description": "เสื้อยืดลายตัวอักษรน่ารัก สีขาว ฟอนต์กลมมน อ่านง่ายดูสดใส"
+  },
+  {
+    "id": "cutietype-pink",
+    "design": "cutietype",
+    "designName": "Cutie Type",
+    "color": "pink",
+    "colorName": "ชมพู",
+    "price": 259,
+    "image": "images/cutietype.jpg",
+    "description": "เสื้อยืดลายตัวอักษรน่ารัก สีชมพู หวานสดใสตามสไตล์ Manglee"
+  },
+  {
+    "id": "cutietype-black",
+    "design": "cutietype",
+    "designName": "Cutie Type",
+    "color": "black",
+    "colorName": "ดำ",
+    "price": 259,
+    "image": "images/cutietype.jpg",
+    "description": "เสื้อยืดลายตัวอักษรน่ารัก สีดำ ตัวหนังสือคมชัดโดดเด่น"
+  }
+]

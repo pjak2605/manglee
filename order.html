@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สั่งซื้อ — Manglee</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand-mark">Manglee</a>
+    <div class="nav-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="product.html">สินค้าทั้งหมด</a>
+    </div>
+  </div>
+</nav>
+
+<section class="order-section wrap">
+  <h1>ยืนยันคำสั่งซื้อ</h1>
+  <p class="lead">กรอกข้อมูลให้ครบ แล้วกดยืนยันสั่งซื้อ ทางร้านจะติดต่อกลับเพื่อนัดชำระเงินและจัดส่ง</p>
+
+  <form id="orderForm">
+    <div class="field">
+      <label for="items">รายการสินค้า</label>
+      <input type="text" id="items" name="items" required>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="size">ไซส์</label>
+        <select id="size" name="size" required>
+          <option value="">เลือกไซส์</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="total">จำนวนเงินรวม (บาท)</label>
+        <input type="text" id="total" name="total" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="customerName">ชื่อลูกค้า</label>
+      <input type="text" id="customerName" name="customerName" required>
+    </div>
+
+    <div class="field">
+      <label for="contact">เบอร์โทร / Line ID</label>
+      <input type="text" id="contact" name="contact" required>
+    </div>
+
+    <div class="field">
+      <label for="note">หมายเหตุ (ถ้ามี)</label>
+      <textarea id="note" name="note" placeholder="เช่น ที่อยู่จัดส่ง, ข้อความถึงร้าน"></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary">ยืนยันสั่งซื้อ</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Manglee © 2026
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
