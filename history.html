@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติการขาย — Manglee</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand-mark">Manglee</a>
+    <div class="nav-links">
+      <a href="pos.html">ขายหน้าร้าน</a>
+      <a href="history.html" class="active">ประวัติการขาย</a>
+      <a href="admin.html">ออเดอร์ออนไลน์</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-head">
+  <div class="wrap">
+    <h1>ประวัติการขายหน้าร้าน</h1>
+    <p>รายการขายทั้งหมดที่บันทึกผ่าน Mini POS เรียงจากล่าสุดไปเก่าสุด</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div id="history-list" class="history-list"></div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Manglee © 2026 · <a href="admin.html">สำหรับแอดมิน</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
+<script src="history.js"></script>
+</body>
+</html>

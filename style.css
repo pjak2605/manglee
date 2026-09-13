@@ -618,3 +618,247 @@ footer.site-footer {
     padding: 48px 0 60px;
   }
 }
+
+/* ===========================================================
+   POS page
+=========================================================== */
+
+.pos-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 24px;
+  padding: 28px 0 90px;
+  align-items: start;
+}
+
+.pos-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.pos-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  overflow: hidden;
+}
+
+.pos-card img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.pos-card-body {
+  padding: 14px;
+}
+
+.pos-card-name {
+  font-family: 'Mitr', sans-serif;
+  font-size: 0.98rem;
+  margin-bottom: 2px;
+}
+
+.pos-card-price {
+  color: var(--rose-deep);
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+}
+
+.size-btn-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.size-btn {
+  border: 1px solid var(--line);
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 8px 0;
+  font-size: 0.82rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.size-btn .stock-count {
+  font-size: 0.68rem;
+  color: var(--mauve);
+}
+
+.size-btn:hover:not(:disabled) {
+  border-color: var(--rose);
+  background: var(--surface);
+}
+
+.size-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pos-cart {
+  position: sticky;
+  top: 84px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 20px;
+}
+
+.pos-cart h2 {
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+}
+
+.cart-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.cart-line-info {
+  font-size: 0.88rem;
+}
+
+.cart-line-info .cart-sub {
+  color: var(--mauve);
+  font-size: 0.78rem;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-controls button {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.cart-empty {
+  color: var(--mauve);
+  font-size: 0.9rem;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.cart-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  font-family: 'Mitr', sans-serif;
+  font-size: 1.15rem;
+  color: var(--rose-deep);
+}
+
+#checkoutBtn {
+  width: 100%;
+  border: none;
+}
+
+#checkoutBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pos-message {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.pos-message.success {
+  background: #eaf6ec;
+  color: #2f6b3a;
+}
+
+.pos-message.error {
+  background: #fbeaea;
+  color: #a83a3a;
+}
+
+/* ===========================================================
+   Sales history page
+=========================================================== */
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 90px;
+}
+
+.sale-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 18px 20px;
+}
+
+.sale-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.sale-card-head .sale-time {
+  color: var(--mauve);
+  font-size: 0.88rem;
+}
+
+.sale-card-head .sale-total {
+  font-family: 'Mitr', sans-serif;
+  color: var(--rose-deep);
+  font-size: 1.1rem;
+}
+
+.sale-items-list {
+  font-size: 0.88rem;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sale-items-list .item-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--mauve);
+}
+
+@media (max-width: 860px) {
+  .pos-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pos-cart {
+    position: static;
+  }
+
+  .pos-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .pos-products {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini POS — Manglee</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand-mark">Manglee</a>
+    <div class="nav-links">
+      <a href="pos.html" class="active">ขายหน้าร้าน</a>
+      <a href="history.html">ประวัติการขาย</a>
+      <a href="admin.html">ออเดอร์ออนไลน์</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-head">
+  <div class="wrap">
+    <h1>ขายหน้าร้าน (Mini POS)</h1>
+    <p>แตะไซส์ที่ลูกค้าต้องการเพื่อใส่ตะกร้า แล้วกดชำระเงินเพื่อบันทึกการขายและตัดสต็อก</p>
+  </div>
+</section>
+
+<section class="wrap pos-layout">
+  <div id="pos-products" class="pos-products"></div>
+
+  <aside class="pos-cart">
+    <h2>ตะกร้า</h2>
+    <div id="cart-lines"></div>
+    <div class="cart-total-row">
+      <span>รวมทั้งหมด</span>
+      <span id="cart-total">฿0</span>
+    </div>
+    <button id="checkoutBtn" class="btn-primary" disabled>ชำระเงิน</button>
+    <div id="pos-message"></div>
+  </aside>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Manglee © 2026 · <a href="admin.html">สำหรับแอดมิน</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
+<script src="pos.js"></script>
+</body>
+</html>
